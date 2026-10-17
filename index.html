@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#142b3a">
+<meta name="description" content="Consulta el Catecismo de la Iglesia Católica, las lecturas del día y un versículo bíblico para tu camino de fe.">
+<title>Recursos de la Fe</title>
+<style>
+:root{--ink:#172b38;--muted:#62727a;--paper:#f5f4ef;--card:#fff;--line:#e2e5e1;--accent:#b47a45;--accent2:#e9dccb;--green:#315c50;--shadow:0 14px 40px #172b380d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit}button,input{font:inherit}.top{background:#142b3a;color:white;padding:17px max(22px,calc((100% - 1120px)/2));display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-weight:750;text-decoration:none;letter-spacing:.01em}.brand span{color:#e6c9a6;margin-right:9px}.top-note{color:#f1dfca;font-size:.9rem}.wrap{max-width:1120px;margin:auto;padding:35px 22px 60px}.eyebrow{font-size:.75rem;letter-spacing:.14em;font-weight:800;color:var(--accent);text-transform:uppercase}.hero{padding:10px 0 26px;max-width:760px}.hero h1{font-size:clamp(2.2rem,5vw,4rem);line-height:1.06;letter-spacing:-.045em;margin:12px 0 15px}.hero p{color:var(--muted);font-size:1.08rem;max-width:680px;margin:0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:clamp(20px,3vw,30px);box-shadow:var(--shadow);min-width:0}.card h2{font-size:1.45rem;line-height:1.2;margin:8px 0}.card p{color:var(--muted);margin:8px 0 18px}.icon{width:43px;height:43px;display:grid;place-items:center;background:#f2e7da;border-radius:13px;font-size:1.3rem}.wide{grid-column:1/-1}.searchrow{display:flex;gap:9px;flex-wrap:wrap}.searchrow input{flex:1;min-width:180px;border:1px solid #d5dcd8;background:#fbfcfa;border-radius:12px;padding:12px 14px;outline-color:var(--green)}.btn{border:0;border-radius:12px;background:var(--green);color:#fff;padding:11px 16px;cursor:pointer;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px}.btn:hover{filter:brightness(1.06)}.btn.secondary{background:#f0e8dd;color:var(--ink)}.results{display:grid;gap:10px;margin-top:16px}.result{border:1px solid var(--line);border-radius:13px;padding:14px 15px;background:#fcfcfa}.result h3{font-size:1rem;margin:0 0 4px}.result p{font-size:.93rem;margin:0 0 7px}.result a{font-size:.9rem;color:var(--green);font-weight:750;text-underline-offset:3px}.verse{background:#173b3a;color:white;border-radius:20px;padding:clamp(24px,4vw,38px);position:relative;overflow:hidden}.verse:after{content:"✦";position:absolute;right:20px;top:-32px;font-size:9rem;color:#ffffff0b;pointer-events:none}.verse .eyebrow{color:#e5c49e}.verse blockquote{font-family:Georgia,serif;font-size:clamp(1.55rem,3vw,2.25rem);line-height:1.35;margin:22px 0 14px;position:relative;z-index:1}.verse .ref{color:#d9e5dc;font-weight:700}.verse .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px;position:relative;z-index:1}.verse .btn{background:#f0dfc9;color:#173b3a}.verse .btn.secondary{background:#ffffff17;color:white;border:1px solid #ffffff30}.note{font-size:.84rem;color:var(--muted);margin-top:12px}.daily-date{font-weight:750;color:var(--green);font-size:.9rem}.daily-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.topics{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.chip{border:1px solid var(--line);background:#f8f8f4;border-radius:999px;padding:7px 12px;cursor:pointer;color:var(--ink);font-size:.88rem}.chip:hover,.chip:focus{background:var(--accent2)}footer{border-top:1px solid var(--line);padding:22px;text-align:center;color:var(--muted);font-size:.85rem}.toast{min-height:1.3em;color:var(--green);font-size:.9rem;margin-top:8px}
+@media(max-width:700px){.grid{grid-template-columns:1fr}.wide{grid-column:auto}.top{padding:15px 18px;align-items:flex-start;flex-direction:column;gap:3px}.wrap{padding:28px 16px 42px}.hero{padding-top:3px}.card{border-radius:17px}}
+</style>
+</head>
+<body>
+<header class="top"><a class="brand" href="#inicio"><span aria-hidden="true">✝</span>Recursos de la Fe</a><span class="top-note">Catequesis · Oración · Palabra</span></header>
+<main class="wrap" id="inicio">
+<section class="hero"><div class="eyebrow">Un espacio para seguir buscando</div><h1>Recursos para tu<br>camino de fe.</h1><p>Consulta lo que enseña la Iglesia, encuentra la Palabra que la liturgia nos propone hoy y deja que una frase de la Biblia te acompañe en lo que estás viviendo.</p></section>
+<div class="grid">
+<section class="card wide" id="catecismo"><div class="icon" aria-hidden="true">📖</div><div class="eyebrow" style="margin-top:15px">01 · Consultar</div><h2>¿Qué dice el Catecismo?</h2><p>Busca por tema o palabra. Te proponemos referencias del Catecismo de la Iglesia Católica para profundizar y consultar el texto completo en la web oficial del Vaticano.</p><div class="searchrow"><input id="catechismSearch" type="search" placeholder="Ej. oración, libertad, sacramentos…" aria-label="Buscar un tema del Catecismo"><button class="btn" id="searchBtn">Buscar</button></div><div class="topics" id="topicChips"><button class="chip" data-term="oración">Oración</button><button class="chip" data-term="sacramentos">Sacramentos</button><button class="chip" data-term="conciencia">Conciencia y libertad</button><button class="chip" data-term="iglesia">Iglesia</button><button class="chip" data-term="esperanza">Esperanza</button><button class="chip" data-term="mandamientos">Mandamientos</button><button class="chip" data-term="Jesús">Jesucristo</button><button class="chip" data-term="amor">Amor</button></div><div class="results" id="catechismResults" aria-live="polite"><div class="result"><h3>Empieza por un tema</h3><p>Escribe una palabra o elige una de las sugerencias para ver referencias relacionadas.</p></div></div><p class="note">Las referencias son una orientación temática; la búsqueda no sustituye la lectura del Catecismo completo.</p><a class="btn secondary" href="https://www.vatican.va/archive/catechism_sp/index_sp.html" target="_blank" rel="noopener noreferrer">Consultar el Catecismo completo ↗</a></section>
+<section class="card"><div class="icon" aria-hidden="true">🕊️</div><div class="eyebrow" style="margin-top:15px">02 · Escuchar</div><h2>La lectura del día</h2><p>Haz un alto en tu jornada para acercarte a las lecturas de la liturgia y dejar que la Palabra ilumine tu vida.</p><div class="daily-date" id="todayDate"></div><div class="daily-links"><a class="btn" href="https://www.vaticannews.va/es/evangelio-de-hoy.html" target="_blank" rel="noopener noreferrer">Evangelio de hoy ↗</a><a class="btn secondary" href="https://www.conferenciaepiscopal.es/lecturas/" target="_blank" rel="noopener noreferrer">Todas las lecturas ↗</a></div><p class="note">Se abrirá una fuente externa con el texto del día. Comprueba la fecha litúrgica indicada en la página.</p></section>
+<section class="card"><div class="icon" aria-hidden="true">✨</div><div class="eyebrow" style="margin-top:15px">03 · Meditar</div><h2>¿Qué me dice Dios?</h2><p>Un versículo al azar para leer despacio, guardar en el corazón y llevar contigo durante el día.</p><div class="verse" style="margin-top:18px"><div class="eyebrow">Una palabra para hoy</div><blockquote id="verseText">«Tu palabra es lámpara para mis pasos, luz en mi sendero».</blockquote><div class="ref" id="verseRef">Salmo 119, 105</div><div class="actions"><button class="btn" id="newVerse">Otro versículo ↻</button><button class="btn secondary" id="copyVerse">Copiar</button><button class="btn secondary" id="shareVerse">Compartir ↗</button></div><div class="toast" id="verseStatus" role="status" aria-live="polite"></div></div><p class="note">Las citas pueden variar ligeramente según la traducción bíblica utilizada.</p></section>
+</div>
+</main>
+<footer>Recursos de la Fe · Un pequeño espacio para buscar, escuchar y vivir la Palabra.</footer>
+<script>
+const catechism = [
+{terms:["oración","rezar","padre nuestro"],title:"La oración en la vida cristiana",range:"CIC 2558–2565",desc:"La oración como relación viva con Dios: iniciativa de Dios, respuesta humana y encuentro personal.",url:"https://www.vatican.va/archive/catechism_sp/p4s1_sp.html"},
+{terms:["sacramentos","bautismo","eucaristía","confirmación","confesión","reconciliación"],title:"Los sacramentos de la Iglesia",range:"CIC 1113–1134",desc:"Qué son los sacramentos y cómo Cristo actúa en la vida de la Iglesia.",url:"https://www.vatican.va/archive/catechism_sp/p2s1c1a1_sp.html"},
+{terms:["conciencia","libertad","decidir","decisiones","responsabilidad"],title:"La conciencia moral y la libertad",range:"CIC 1776–1802",desc:"Cómo formar la conciencia y orientar nuestras decisiones hacia el bien.",url:"https://www.vatican.va/archive/catechism_sp/p3s1c1a6_sp.html"},
+{terms:["iglesia","comunidad","pueblo de dios"],title:"La Iglesia: pueblo de Dios",range:"CIC 781–810",desc:"La identidad de la Iglesia y la vocación de sus miembros.",url:"https://www.vatican.va/archive/catechism_sp/p1s2c3a9_sp.html"},
+{terms:["esperanza","cielo","vida eterna","resurrección"],title:"La esperanza cristiana",range:"CIC 1817–1821",desc:"La esperanza como confianza en las promesas de Cristo y deseo del Reino de los cielos.",url:"https://www.vatican.va/archive/catechism_sp/p3s1c1a7_sp.html"},
+{terms:["mandamientos","decálogo","ley","pecado"],title:"Los Diez Mandamientos",range:"CIC 2052–2082",desc:"Los mandamientos como camino de libertad, alianza y amor a Dios y al prójimo.",url:"https://www.vatican.va/archive/catechism_sp/p3s2_sp.html"},
+{terms:["jesús","cristo","jesucristo","encarnación"],title:"Jesucristo, Hijo de Dios",range:"CIC 422–455",desc:"La confesión cristiana de Jesús como Hijo de Dios hecho hombre para nuestra salvación.",url:"https://www.vatican.va/archive/catechism_sp/p1s2c2a2_sp.html"},
+{terms:["amor","caridad","prójimo","amar"],title:"El amor a Dios y al prójimo",range:"CIC 1822–1829",desc:"La caridad como virtud que nos mueve a amar a Dios sobre todas las cosas y al prójimo como a nosotros mismos.",url:"https://www.vatican.va/archive/catechism_sp/p3s1c1a7_sp.html"},
+{terms:["fe","creer","credo"],title:"Creo: la respuesta de la fe",range:"CIC 142–165",desc:"Qué significa creer, confiar en Dios y vivir la fe en comunidad.",url:"https://www.vatican.va/archive/catechism_sp/p1s1c3_sp.html"},
+{terms:["biblia","escritura","palabra de dios","evangelio"],title:"La Sagrada Escritura",range:"CIC 101–141",desc:"La Palabra de Dios transmitida en la Sagrada Escritura y su lugar en la vida cristiana.",url:"https://www.vatican.va/archive/catechism_sp/p1s1c2_sp.html"},
+{terms:["espíritu santo","pentecostés","dones"],title:"El Espíritu Santo",range:"CIC 683–747",desc:"El Espíritu Santo nos conduce a Cristo y actúa en la vida de la Iglesia.",url:"https://www.vatican.va/archive/catechism_sp/p1s2c3a8_sp.html"},
+{terms:["misa","eucaristía","comunión"],title:"La Eucaristía",range:"CIC 1322–1419",desc:"La Eucaristía, fuente y culmen de la vida cristiana.",url:"https://www.vatican.va/archive/catechism_sp/p2s2c1a3_sp.html"}
+];
+const normalize = s => s.toLocaleLowerCase("es").normalize("NFD").replace(/[\u0300-\u036f]/g,"");
+function searchCatechism(term){const q=normalize(term.trim());const results=document.getElementById("catechismResults");if(!q){results.innerHTML='<div class="result"><h3>¿Qué tema te interesa?</h3><p>Prueba con palabras como fe, oración, amor, Biblia o sacramentos.</p></div>';return;}const found=catechism.filter(item=>normalize([item.title,item.range,item.desc,...item.terms].join(" ")).includes(q));results.innerHTML=found.length?found.map(item=>'<article class="result"><h3>'+item.title+'</h3><p><strong>'+item.range+'</strong> · '+item.desc+'</p><a href="'+item.url+'" target="_blank" rel="noopener noreferrer">Consultar esta sección ↗</a></article>').join(""):'<div class="result"><h3>No encuentro una coincidencia directa</h3><p>Prueba con una palabra más general o consulta el Catecismo completo en la web del Vaticano.</p><a href="https://www.vatican.va/archive/catechism_sp/index_sp.html" target="_blank" rel="noopener noreferrer">Abrir Catecismo completo ↗</a></div>';}
+document.getElementById("searchBtn").addEventListener("click",()=>searchCatechism(document.getElementById("catechismSearch").value));
+document.getElementById("catechismSearch").addEventListener("keydown",e=>{if(e.key==="Enter")searchCatechism(e.target.value)});
+document.querySelectorAll("[data-term]").forEach(b=>b.addEventListener("click",()=>{document.getElementById("catechismSearch").value=b.dataset.term;searchCatechism(b.dataset.term)}));
+document.getElementById("todayDate").textContent=new Intl.DateTimeFormat("es-ES",{weekday:"long",day:"numeric",month:"long",year:"numeric"}).format(new Date()).replace(/^./,c=>c.toLocaleUpperCase("es"));
+const verses=[
+["«No temas, porque yo estoy contigo; no te angusties, porque yo soy tu Dios.»","Isaías 41, 10"],
+["«El Señor es mi pastor, nada me falta.»","Salmo 23, 1"],
+["«Tu palabra es lámpara para mis pasos, luz en mi sendero.»","Salmo 119, 105"],
+["«Todo lo puedo en aquel que me fortalece.»","Filipenses 4, 13"],
+["«Amaos unos a otros como yo os he amado.»","Juan 15, 12"],
+["«Pedid y se os dará, buscad y encontraréis, llamad y se os abrirá.»","Mateo 7, 7"],
+["«Bienaventurados los que trabajan por la paz, porque serán llamados hijos de Dios.»","Mateo 5, 9"],
+["«El amor es paciente, es servicial; el amor no tiene envidia.»","1 Corintios 13, 4"],
+["«Yo estoy con vosotros todos los días, hasta el final de los tiempos.»","Mateo 28, 20"],
+["«Confía en el Señor con todo tu corazón.»","Proverbios 3, 5"],
+["«El Señor está cerca de los que tienen el corazón destrozado.»","Salmo 34, 19"],
+["«Que vuestra luz brille ante los hombres.»","Mateo 5, 16"],
+["«Venid a mí todos los que estáis cansados y agobiados, y yo os aliviaré.»","Mateo 11, 28"],
+["«Donde está tu tesoro, allí estará tu corazón.»","Mateo 6, 21"],
+["«No nos cansemos de hacer el bien.»","Gálatas 6, 9"],
+["«Dios es amor.»","1 Juan 4, 8"],
+["«El Señor te bendiga y te proteja.»","Números 6, 24"],
+["«Alegraos en la esperanza, sed pacientes en la tribulación, perseverantes en la oración.»","Romanos 12, 12"],
+["«Yo soy el camino y la verdad y la vida.»","Juan 14, 6"],
+["«Dichosos los limpios de corazón, porque ellos verán a Dios.»","Mateo 5, 8"],
+["«El que permanece en mí y yo en él, ese da fruto abundante.»","Juan 15, 5"],
+["«No amemos de palabra y de boca, sino de verdad y con obras.»","1 Juan 3, 18"],
+["«El Señor es mi luz y mi salvación, ¿a quién temeré?»","Salmo 27, 1"],
+["«Para Dios nada hay imposible.»","Lucas 1, 37"],
+["«Aprended de mí, que soy manso y humilde de corazón.»","Mateo 11, 29"],
+["«La verdad os hará libres.»","Juan 8, 32"],
+["«Estad siempre alegres en el Señor; os lo repito, estad alegres.»","Filipenses 4, 4"],
+["«Que todo lo que hagáis sea con amor.»","1 Corintios 16, 14"],
+["«El fruto del Espíritu es amor, alegría, paz, paciencia, amabilidad, bondad, fidelidad.»","Gálatas 5, 22"],
+["«El Señor da fuerza al cansado, acrecienta el vigor del que está exhausto.»","Isaías 40, 29"],
+["«Venid y lo veréis.»","Juan 1, 39"],
+["«Si nos amamos unos a otros, Dios permanece en nosotros.»","1 Juan 4, 12"],
+["«Bienaventurados los misericordiosos, porque ellos alcanzarán misericordia.»","Mateo 5, 7"],
+["«Encomienda al Señor tu camino, confía en él, y él actuará.»","Salmo 37, 5"],
+["«Permaneced en mi amor.»","Juan 15, 9"],
+["«El Señor es clemente y misericordioso, lento a la cólera y rico en piedad.»","Salmo 145, 8"],
+["«Buscad primero el reino de Dios y su justicia.»","Mateo 6, 33"],
+["«A cada día le basta su propio mal.»","Mateo 6, 34"],
+["«Si alguno quiere ser el primero, que sea el último de todos y el servidor de todos.»","Marcos 9, 35"],
+["«Nada podrá separarnos del amor de Dios manifestado en Cristo Jesús.»","Romanos 8, 39"]
+];
+let lastVerse=-1;
+function chooseVerse(){let n=Math.floor(Math.random()*verses.length);if(verses.length>1&&n===lastVerse)n=(n+1+Math.floor(Math.random()*(verses.length-1)))%verses.length;lastVerse=n;document.getElementById("verseText").textContent=verses[n][0];document.getElementById("verseRef").textContent=verses[n][1];document.getElementById("verseStatus").textContent="";}
+function currentVerse(){return document.getElementById("verseText").textContent+" — "+document.getElementById("verseRef").textContent;}
+document.getElementById("newVerse").addEventListener("click",chooseVerse);
+document.getElementById("copyVerse").addEventListener("click",async()=>{const status=document.getElementById("verseStatus");try{await navigator.clipboard.writeText(currentVerse());status.textContent="Versículo copiado."; }catch(e){status.textContent="No se pudo copiar automáticamente. Selecciona el texto para copiarlo."; }});
+document.getElementById("shareVerse").addEventListener("click",async()=>{const status=document.getElementById("verseStatus");if(navigator.share){try{await navigator.share({title:"¿Qué me dice Dios?",text:currentVerse(),url:location.href});}catch(e){if(e.name!=="AbortError")status.textContent="No se pudo abrir el menú para compartir.";}}else{try{await navigator.clipboard.writeText(currentVerse()+"\n"+location.href);status.textContent="Versículo y enlace copiados para compartir.";}catch(e){status.textContent="Puedes copiar el versículo y compartirlo manualmente.";}}});
+chooseVerse();
+</script>
+</body>
+</html>
